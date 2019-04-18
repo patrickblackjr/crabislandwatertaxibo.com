@@ -21,36 +21,13 @@
       <b-carousel-slide img-src="./slides/slide4.jpg"></b-carousel-slide>
     </b-carousel>
   </b-container>
-  <b-container>
-    <b-row>
-      <Boxes
-        v-for="box in boxes"
-        v-bind:key="box.title"
-        :title="box.title"
-        :text="box.text"
-        :link="box.link" />
-    </b-row>
-  </b-container>
-  <Section 
-    v-for="section in section"
-    v-bind:key="section.title"
-    :title="section.title"
-    :text="section.text"
-    />
-  <WhyUs />
 </div>
 </template>
 
 <script>
-import Boxes   from   '@/components/Boxes.vue';
-import Section from   '@/components/Section.vue';
-import WhyUs   from   '@/components/WhyUs.vue'
 
 export default {
   components: {
-    Boxes,
-    Section,
-    WhyUs
   },
   head () {
     let title = this.pageTitle;
