@@ -1,4 +1,5 @@
-const pkg = require('./package')
+// eslint-disable-next-line no-unused-vars
+const pkg = require('./package');
 
 module.exports = {
   mode: 'universal',
@@ -9,7 +10,8 @@ module.exports = {
   head: {
     title: `Bo's Crab Island Water Taxi`,
     titleTemplate: `%s • Bo's Crab Island Water Taxi`,
-    meta: [{
+    meta: [
+      {
         charset: 'utf-8'
       },
       {
@@ -17,11 +19,13 @@ module.exports = {
         content: 'width=device-width, initial-scale=1'
       }
     ],
-    link: [{
-      rel: 'icon',
-      type: 'image/x-icon',
-      href: '/favicon.ico'
-    }]
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/png',
+        href: '/favicon.png'
+      }
+    ]
   },
 
   /*
@@ -34,9 +38,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: [
-    '@/assets/overwrites.scss'
-  ],
+  css: ['@/assets/overwrites.scss'],
 
   /*
    ** Plugins to load before mounting the App
@@ -46,8 +48,7 @@ module.exports = {
   /*
    ** Nuxt.js modules
    */
-  modules: [,
-    // Doc: https://bootstrap-vue.js.org/docs/
+  modules: [
     'bootstrap-vue/nuxt'
     // ['@nuxtjs/google-analytics', {
     //   id: 'UA-45533527-4'
@@ -61,8 +62,7 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {
-
-    }
+    // eslint-disable-next-line no-unused-vars
+    extend(config, ctx) {}
   }
-}
+};

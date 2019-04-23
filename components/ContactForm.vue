@@ -1,38 +1,71 @@
 <template>
   <section id="contact-form">
-    <form name="contact" action="/thank-you" method="POST" netlify data-netlify-honeypot="bot-field">
-      <input type="hidden" name="contact" value="contact">
+    <form
+      name="contact"
+      action="/thank-you"
+      method="POST"
+      netlify
+      data-netlify-honeypot="bot-field"
+    >
+      <input type="hidden" name="contact" value="contact" />
       <div class="form-group">
-        <input name="name" type="text" id="name" class="form-control" required placeholder="Enter name">
+        <input
+          id="name"
+          name="name"
+          type="text"
+          class="form-control"
+          required
+          placeholder="Enter name"
+        />
         <label for="name">First and last name</label>
       </div>
       <div class="form-group">
-        <input name="email" type="email" id="email" class="form-control" required placeholder="Enter email">
+        <input
+          id="email"
+          name="email"
+          type="email"
+          class="form-control"
+          required
+          placeholder="Enter email"
+        />
         <label for="email">Email address</label>
       </div>
       <div class="form-group">
-        <input name="phone" type="phone" id="phone" class="form-control" required placeholder="Enter phone">
+        <input
+          id="phone"
+          name="phone"
+          type="phone"
+          class="form-control"
+          required
+          placeholder="Enter phone"
+        />
         <label for="phone">Phone number</label>
       </div>
       <div class="form-group-out">
         <label class="sr-only" for="message">Message</label>
-        <textarea name="message" class="form-control" id="message" placeholder="Message" rows="4"></textarea>
+        <textarea
+          id="message"
+          name="message"
+          class="form-control"
+          placeholder="Message"
+          rows="4"
+        ></textarea>
       </div>
-      <input class="form-button btn btn-primary mt-3" type="submit" value="Submit"/>
+      <input
+        class="form-button btn btn-primary mt-3"
+        type="submit"
+        value="Submit"
+      />
     </form>
   </section>
 </template>
 
 <script>
-
 export default {
   data() {
-    return {
-
-    }
+    return {};
   }
-}
-
+};
 </script>
 
 <style>
@@ -44,7 +77,7 @@ export default {
 .form-group > input,
 .form-group > label {
   height: 3.125rem;
-  padding: .75rem;
+  padding: 0.75rem;
 }
 
 .form-group > label {
@@ -59,8 +92,8 @@ export default {
   pointer-events: none;
   cursor: text; /* Match the input under the label */
   border: 1px solid transparent;
-  border-radius: .25rem;
-  transition: all .1s ease-in-out;
+  border-radius: 0.25rem;
+  transition: all 0.1s ease-in-out;
 }
 
 .form-group input::-webkit-input-placeholder {
@@ -85,12 +118,12 @@ export default {
 
 .form-group input:not(:placeholder-shown) {
   padding-top: 1.25rem;
-  padding-bottom: .25rem;
+  padding-bottom: 0.25rem;
 }
 
 .form-group input:not(:placeholder-shown) ~ label {
-  padding-top: .25rem;
-  padding-bottom: .25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   font-size: 12px;
   color: #777;
 }

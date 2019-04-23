@@ -1,8 +1,8 @@
 <template>
   <div>
-    <NavBar/>
-    <nuxt/>
-    <Footer/>
+    <NavBar />
+    <nuxt />
+    <Footer />
   </div>
 </template>
 
@@ -15,5 +15,5 @@ export default {
     NavBar,
     Footer
   }
-}
+};
 </script>
