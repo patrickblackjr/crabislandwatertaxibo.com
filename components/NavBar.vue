@@ -7,13 +7,13 @@
         sticky
         class=""
         toggleable="md"
-        type="light"
-        variant="primary"
+        type="dark"
+        variant="dark"
       >
         <b-navbar-toggle exact target="nav_collapse"></b-navbar-toggle>
 
         <b-navbar-brand href="/"
-          ><img height="75" src="@/assets/logo-dark-one-color.png"
+          ><img height="40" src="@/assets/logo-color-light.png"
         /></b-navbar-brand>
 
         <b-collapse id="nav_collapse" is-nav>
@@ -21,8 +21,11 @@
             <b-nav-item exact href="#home" @click="scrollIntoView"
               >Home</b-nav-item
             >
-            <b-nav-item exact href="#footer" @click="scrollIntoView"
-              >Footer</b-nav-item
+            <b-nav-item exact href="#pricing" @click="scrollIntoView"
+              >Pricing</b-nav-item
+            >
+            <b-nav-item exact href="#contact" @click="scrollIntoView"
+              >Contact</b-nav-item
             >
           </b-navbar-nav>
         </b-collapse>
@@ -32,15 +35,10 @@
 </template>
 
 <style lang="scss" scoped>
-$yellow: #ffcb00;
-$primary: $yellow;
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
-.nav-item {
-  font-size: 1.5em;
-  opacity: 1;
-}
 #navigation {
-  background-color: $primary;
-  text-transform: uppercase;
+  background-color: #343a40;
+  font-family: 'Poppins', sans-serif;
 }
 </style>

@@ -1,24 +1,16 @@
 <template>
   <div id="home">
-    <b-carousel
-      v-model="slide"
-      class="mb-5 d-none d-lg-block"
-      style="text-shadow: 1px 1px 1px #333"
-      background="#ababab"
-      :interval="4000"
-      img-width="100%"
-      img-height="200"
-    >
-      <b-carousel-slide img-src="main.jpg">
-        <h1>Bo's Crab Island Water Taxi</h1>
-      </b-carousel-slide>
-    </b-carousel>
+    <Hero />
   </div>
 </template>
 
 <script>
+import Hero from '@/components/Hero.vue';
+
 export default {
-  components: {},
+  components: {
+    Hero
+  },
   head() {
     let title = this.pageTitle;
     return {
@@ -47,14 +39,14 @@ export default {
         name: `Bo's Crab Island Water Taxi`,
         address: {
           '@type': 'PostalAddress',
-          streetAddress: '285 Harbor Blvd',
+          streetAddress: '30 State Highway',
           addressLocality: 'Destin',
           addressRegion: 'FL',
           postalCode: '32541'
         },
         image:
           'https://cdn.pixabay.com/photo/2015/08/17/00/07/pontoon-891835_1280.jpg',
-        email: 'bigbadbo6969@gmail.com',
+        email: 'crabislandwatertaxibo@yahoo.com',
         telePhone: '(850) 307-2788',
         url: 'crabislandwatertaxibo.com',
         paymentAccepted: ['cash', 'credit card'],
@@ -76,14 +68,12 @@ export default {
         ],
         geo: {
           '@type': 'GeoCoordinates',
-          latitude: '30.394763',
-          longitude: '-86.505772'
+          latitude: '30.3911221,',
+          longitude: '-86.5222076'
         },
         priceRange: '$$'
       },
-      pageTitle: 'Home',
-      slide: 0,
-      sliding: null
+      pageTitle: 'Home'
     };
   },
   methods: {

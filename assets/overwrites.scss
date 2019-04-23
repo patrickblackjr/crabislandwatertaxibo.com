@@ -1,6 +1,7 @@
 $yellow: #ffcb00;
 $primary: $yellow;
 
-$font-family-sans-serif: 'PT Sans', sans-serif;
+$font-family-sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$enable-responsive-font-sizes: 'true';
 
 @import '~bootstrap/scss/bootstrap.scss';
