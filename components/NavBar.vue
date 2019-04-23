@@ -2,7 +2,7 @@
   <div id="navigation">
     <b-container>
       <b-navbar
-        v-b-scrollspy:scrollspy-nested
+        v-b-scrollspy:nav-scroller
         exact
         sticky
         class=""
@@ -41,5 +41,6 @@ $primary: $yellow;
 }
 #navigation {
   background-color: $primary;
+  text-transform: uppercase;
 }
 </style>
