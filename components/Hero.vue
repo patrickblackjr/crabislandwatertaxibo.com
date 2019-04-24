@@ -1,5 +1,5 @@
 <template>
-  <div id="hero" class="h-100 justify-content-center align-items-center">
+  <div id="home" class="h-100 justify-content-center align-items-center">
     <div class="layer"></div>
     <h1 class="text-white text-center hero-text">
       Water Taxi to Crab Island
@@ -8,7 +8,7 @@
 </template>
 
 <style lang="scss" scoped>
-#hero {
+#home {
   background-image: linear-gradient(
       to right,
       rgba(2, 170, 176, 0.75),

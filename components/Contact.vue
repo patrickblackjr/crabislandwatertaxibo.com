@@ -1,5 +1,5 @@
 <template>
-  <div id="about" class="pt-5 pb-5">
+  <div id="contact" class="pt-5 pb-5">
     <b-container>
       <div class="text-center">
         <h2>Contact</h2>

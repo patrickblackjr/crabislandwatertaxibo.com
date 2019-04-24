@@ -1,5 +1,5 @@
 <template>
-  <div id="home">
+  <div id="main">
     <Hero />
     <Rates />
     <About />
@@ -84,6 +84,18 @@ export default {
       },
       pageTitle: 'Home'
     };
+  },
+  methods: {
+    // Convenience method to scroll a heading into view.
+    // Not required for scrollspy to work
+    scrollIntoView(evt) {
+      evt.preventDefault();
+      const href = evt.target.getAttribute('href');
+      const el = href ? document.querySelector(href) : null;
+      if (el) {
+        this.$refs.content.scrollTop = el.offsetTop;
+      }
+    }
   }
 };
 </script>
