@@ -1,7 +1,9 @@
 $yellow: #ffcb00;
 $primary: $yellow;
 
-$font-family-sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600');
+$font-family-sans-serif: 'Poppins', sans-serif;
+
 $enable-responsive-font-sizes: 'true';
 
 @import '~bootstrap/scss/bootstrap.scss';

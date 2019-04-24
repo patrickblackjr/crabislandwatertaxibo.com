@@ -2,7 +2,7 @@
   <div id="hero" class="h-100 justify-content-center align-items-center">
     <div class="layer"></div>
     <h1 class="text-white text-center hero-text">
-      Taxi Service for Crab Island
+      Water Taxi to Crab Island
     </h1>
   </div>
 </template>
@@ -22,6 +22,9 @@
   background-size: cover;
   background-position: center center;
   display: flex;
+}
+h1 {
+  font-weight: 600;
 }
 .hero-text {
   font-size: 4rem;

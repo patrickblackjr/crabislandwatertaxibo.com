@@ -21,8 +21,11 @@
             <b-nav-item exact href="#home" @click="scrollIntoView"
               >Home</b-nav-item
             >
-            <b-nav-item exact href="#pricing" @click="scrollIntoView"
-              >Pricing</b-nav-item
+            <b-nav-item exact href="#rates" @click="scrollIntoView"
+              >Rates</b-nav-item
+            >
+            <b-nav-item exact href="#about" @click="scrollIntoView"
+              >About</b-nav-item
             >
             <b-nav-item exact href="#contact" @click="scrollIntoView"
               >Contact</b-nav-item
@@ -35,10 +38,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css?family=Poppins');
-
 #navigation {
   background-color: #343a40;
-  font-family: 'Poppins', sans-serif;
 }
 </style>
