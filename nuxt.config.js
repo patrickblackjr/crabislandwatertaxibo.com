@@ -9,7 +9,7 @@ module.exports = {
    */
   head: {
     title: `Bo's Crab Island Water Taxi`,
-    titleTemplate: `%s • Bo's Crab Island Water Taxi`,
+    titleTemplate: `Bo's Crab Island Water Taxi`,
     meta: [
       {
         charset: 'utf-8'
@@ -24,6 +24,10 @@ module.exports = {
         rel: 'icon',
         type: 'image/png',
         href: '/favicon.png'
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Poppins:400,600,800'
       }
     ]
   },

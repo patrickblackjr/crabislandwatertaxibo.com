@@ -2,9 +2,9 @@
   <div id="navigation">
     <b-container>
       <b-navbar
-        v-b-scrollspy:nav-scroller
+        v-b-scrollspy:home
         exact
-        sticky
+        fixed="top"
         class=""
         toggleable="md"
         type="dark"
@@ -18,18 +18,10 @@
 
         <b-collapse id="nav_collapse" is-nav>
           <b-navbar-nav class="ml-auto">
-            <b-nav-item exact href="#home" @click="scrollIntoView"
-              >Home</b-nav-item
-            >
-            <b-nav-item exact href="#rates" @click="scrollIntoView"
-              >Rates</b-nav-item
-            >
-            <b-nav-item exact href="#about" @click="scrollIntoView"
-              >About</b-nav-item
-            >
-            <b-nav-item exact href="#contact" @click="scrollIntoView"
-              >Contact</b-nav-item
-            >
+            <b-nav-item exact href="#home">Home</b-nav-item>
+            <b-nav-item exact href="#rates">Rates</b-nav-item>
+            <b-nav-item exact href="#about">About</b-nav-item>
+            <b-nav-item exact href="#contact">Contact</b-nav-item>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
@@ -38,7 +30,12 @@
 </template>
 
 <style lang="scss" scoped>
+$yellow: #ffcb00;
+
 #navigation {
   background-color: #343a40;
+}
+.navbar-nav .active > .nav-link {
+  color: $yellow;
 }
 </style>

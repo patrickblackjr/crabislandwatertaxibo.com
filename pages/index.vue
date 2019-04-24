@@ -1,15 +1,24 @@
 <template>
   <div id="home">
     <Hero />
+    <Rates />
+    <About />
+    <Contact />
   </div>
 </template>
 
 <script>
 import Hero from '@/components/Hero.vue';
+import Rates from '@/components/Rates.vue';
+import About from '@/components/About.vue';
+import Contact from '@/components/Contact.vue';
 
 export default {
   components: {
-    Hero
+    Hero,
+    Rates,
+    About,
+    Contact
   },
   head() {
     let title = this.pageTitle;
@@ -19,7 +28,7 @@ export default {
         {
           hid: `description`,
           name: 'description',
-          content: `Precision Firestopping excels in all forms of firestopping in commercial construction. Our goal is to provide performance, product, and service that will consistently exceed our client expectations.`
+          content: `Bo's Crab Island Water Taxi is the best bang for your buck on the Emerald Coast for ferry and water taxi services to Crab Island.`
         }
       ],
       __dangerouslyDisableSanitizers: ['script'],
@@ -75,18 +84,12 @@ export default {
       },
       pageTitle: 'Home'
     };
-  },
-  methods: {
-    // Convenience method to scroll a heading into view.
-    // Not required for scrollspy to work
-    scrollIntoView(evt) {
-      evt.preventDefault();
-      const href = evt.target.getAttribute('href');
-      const el = href ? document.querySelector(href) : null;
-      if (el) {
-        this.$refs.content.scrollTop = el.offsetTop;
-      }
-    }
   }
 };
 </script>
+
+<style lang="scss">
+#home {
+  position: relative;
+}
+</style>
