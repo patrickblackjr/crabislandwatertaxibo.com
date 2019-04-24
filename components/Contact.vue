@@ -9,6 +9,7 @@
             >(850) 736-2544</a
           >
         </p>
+        <p>Park at the public parking on the West side of the Destin bridge.</p>
       </div>
     </b-container>
   </div>
@@ -19,7 +20,7 @@ h2 {
   font-weight: 800;
   font-size: 2.75em;
 }
-p {
+a {
   font-weight: 400;
   font-size: 5rem;
 }
